@@ -11,7 +11,7 @@ public class LinearEq {
 	double c = Double.parseDouble(args[2]);
 	double fin;
 	fin = (c - b)/a;
-	System.out.println("The solution to the equation " + a + "x + " + b + " = " + c + " is:");
-	System.out.println(fin);
+	System.out.println(a + " * x + " + b + " = " + c);
+	System.out.println("x = " + fin);
 	}
 }

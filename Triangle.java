@@ -9,9 +9,9 @@ public class Triangle {
 		int s2 = Integer.parseInt(args[1]);
 		int s3 = Integer.parseInt(args[2]);
 		if (((s1 + s2) > s3) && ((s2 + s3) > s1) && ((s1 + s3) > s2)) {
-		System.out.println("The given sides: " + s1 + ", " + s2 + ", " + s3 + " do form a triangle");
+		System.out.println(s1 + ", " + s2 + ", " + s3 + ": true");
 		} else {
-		System.out.println("The given sides: " + s1 + ", " + s2 + ", " + s3 + " do not form a triangle");
+		System.out.println(s1 + ", " + s2 + ", " + s3 + ": false");
 		}
 	}
 }
