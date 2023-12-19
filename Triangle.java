@@ -5,6 +5,13 @@
  */ 
 public class Triangle {
 	public static void main(String[] args) {
-		// Put your code here	
+		int s1 = Integer.parseInt(args[0]);
+		int s2 = Integer.parseInt(args[1]);
+		int s3 = Integer.parseInt(args[2]);
+		if (((s1 + s2) > s3) && ((s2 + s3) > s1) && ((s1 + s3) > s2)) {
+		System.out.println("The given sides: " + s1 + ", " + s2 + ", " + s3 + " do form a triangle");
+		} else {
+		System.out.println("The given sides: " + s1 + ", " + s2 + ", " + s3 + " do not form a triangle");
+		}
 	}
 }
