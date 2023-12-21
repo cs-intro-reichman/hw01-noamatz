@@ -7,15 +7,13 @@ public class GenThree {
 		int fin;
 		int Min = Integer.parseInt(args[0]);
 		int Max = Integer.parseInt(args[1]);
-		int x = Min + (int)(Math.random() * ((Max - Min) + 1));
-		int y = Min + (int)(Math.random() * ((Max - Min) + 1));
-		int z = Min + (int)(Math.random() * ((Max - Min) + 1));
+		int x = Min + (int)(Math.random() * (Max - Min));
+		int y = Min + (int)(Math.random() * (Max - Min));
+		int z = Min + (int)(Math.random() * (Max - Min));
 		System.out.println(x);
 		System.out.println(y);
 		System.out.println(z);
-		int first = Math.min(x, y);
-		int second = Math.min(y, z);
-		fin = Math.min(first, second);
+		fin = Math.min(Math.min(x,y),z);
 		System.out.println("The minimal generated number was " + fin);
 
 	}
