@@ -4,9 +4,9 @@
  */
 public class GenThree {
 	public static void main(String[] args) {
+		int fin;
 		int Min = Integer.parseInt(args[0]);
 		int Max = Integer.parseInt(args[1]);
-		int fin;
 		int x = Min + (int)(Math.random() * ((Max - Min) + 1));
 		int y = Min + (int)(Math.random() * ((Max - Min) + 1));
 		int z = Min + (int)(Math.random() * ((Max - Min) + 1));
