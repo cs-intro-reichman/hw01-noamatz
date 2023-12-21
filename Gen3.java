@@ -7,9 +7,9 @@ public class Gen3 {
 		int fin;
 		int Min = Integer.parseInt(args[0]);
 		int Max = Integer.parseInt(args[1]);
-		int x = Min + (int)(Math.random() * ((Max - Min) + 1));
-		int y = Min + (int)(Math.random() * ((Max - Min) + 1));
-		int z = Min + (int)(Math.random() * ((Max - Min) + 1));
+		int x = Min + (int)(Math.random() * (Max - Min));
+		int y = Min + (int)(Math.random() * (Max - Min));
+		int z = Min + (int)(Math.random() * (Max - Min));
 		System.out.println(x);
 		System.out.println(y);
 		System.out.println(z);
